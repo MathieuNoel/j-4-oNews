@@ -1,0 +1,123 @@
+/**** ajout de variables pour changer plus rapidement les données du code ****/
+:root {
+    --Liens-article : #007bff;
+    --Liens-article-survol : #0056b3;
+    --fond-header : #f9f9f9;
+    --bordure-article : #eaeaea;
+    --arctile-WORK : #0766F0;
+    --artcile-TEAM : #DC5E53;
+    --article-NEWS : #98DC62;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    max-height: 100vh; 
+    overflow: hidden;  
+}
+
+.container-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(/var/www/html/S01E06-atelier-oNews-MathieuNoel/images/nicole.jpg);
+    background-size:100% 100%;
+    width: 50vw;
+    height: 100vh;
+    color: var(--fond-header); 
+    padding: 40px 20px 20px 30px;   
+}
+
+
+
+
+.container-image__header {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.container-image__header h1 {
+    word-break: break-word;
+    font-size: 1em;
+    display: inline; 
+       
+}
+
+#img {
+   width: 2.2rem;
+   height: 2.2rem; 
+   padding-right: 5px;
+}
+
+
+.container-image__main {
+    background-color: rgba(999, 999, 999, 0.2) ;
+    text-align: right;
+
+}
+
+.container-image__main h2 {
+    letter-spacing: 0.1em;
+    padding:1.5rem 1rem 1.5rem 0;
+}
+
+.container-image__main strong {
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-right: 0.5rem;
+}
+
+.container-image__main em {
+    font-style: italic ;
+}
+
+.container-image__main p {
+    margin-left: 30%;
+    padding: 0 1rem 1.5rem 0 ;
+}
+
+
+.container-image__footer {
+    text-align: right;
+}
+
+.container-image__footer a {
+    padding: 2rem;
+}
+
+.container-article {    
+    width: 50vw;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container-article__title {
+    font-weight: bolder;
+    font-size: 2em;
+    width: 50vw;
+    height: 5vh;
+    background-color: var(--fond-header);    
+}
+
+.container-article__main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.article {
+    border: 1px solid var(--bordure-article);
+    position: relative;
+    max-width: 23.5vw;
+}
+
+
